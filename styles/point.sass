@@ -1,0 +1,226 @@
+@import "variable"
+
+.point
+  background: $board-background
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+
+.point:hover
+  transition: 0.3s
+  background: $board-background-hover
+
+.point::before
+  content: ''
+  height: 3%
+  width: 100%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 50%
+
+.point::after
+  content: ""
+  height: 100%
+  width: 3%
+  background: $line-color
+  display: block
+  position: absolute
+  left: 50%
+
+.corner-top-left
+  position: relative
+
+.corner-top-left::before
+  content: ''
+  height: 3%
+  width: 50%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 50%
+  left: 50%
+
+.corner-top-left::after
+  content: ""
+  height: 50%
+  width: 3%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 50%
+  left: 50%
+
+
+.corner-top-right
+  position: relative
+
+.corner-top-right::before
+  content: ''
+  height: 3%
+  width: 50%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 50%
+  left: 0
+
+.corner-top-right::after
+  content: ""
+  height: 50%
+  width: 3%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 50%
+  left: 50%
+
+
+.corner-bottom-left
+  position: relative
+
+.corner-bottom-left::before
+  content: ''
+  height: 3%
+  width: 50%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 50%
+  left: 50%
+
+.corner-bottom-left::after
+  content: ""
+  height: 50%
+  width: 3%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 0
+  left: 50%
+
+
+.corner-bottom-right
+  position: relative
+
+.corner-bottom-right::before
+  content: ''
+  height: 3%
+  width: 50%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 50%
+  left: 0
+
+.corner-bottom-right::after
+  content: ""
+  height: 53%
+  width: 3%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 0
+  left: 50%
+
+.edge-top
+  position: relative
+
+.edge-top::before
+  content: ''
+  height: 3%
+  width: 100%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 50%
+
+.edge-top::after
+  content: ""
+  height: 50%
+  width: 3%
+  background: $line-color
+  display: block
+  position: absolute
+  left: 50%
+  top: 50%
+
+
+.edge-bottom
+  position: relative
+
+.edge-bottom::before
+  content: ''
+  height: 3%
+  width: 100%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 50%
+
+.edge-bottom::after
+  content: ""
+  height: 50%
+  width: 3%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 0
+  left: 50%
+
+
+.edge-left
+  position: relative
+
+.edge-left::before
+  content: ''
+  height: 3%
+  width: 50%
+  background: $line-color
+  display: block
+  position: absolute
+  left: 50%
+  top: 50%
+
+.edge-left::after
+  content: ""
+  height: 100%
+  width: 3%
+  background: $line-color
+  display: block
+  position: absolute
+  left: 50%
+
+
+.edge-right
+  position: relative
+
+.edge-right::before
+  content: ''
+  height: 3%
+  width: 50%
+  background: $line-color
+  display: block
+  position: absolute
+  top: 50%
+  left: 0
+
+.edge-right::after
+  content: ""
+  height: 100%
+  width: 3%
+  background: $line-color
+  display: block
+  position: absolute
+  left: 50%
+
+.star
+  width: 16%
+  height: 16%
+  border-radius: 50%
+  background: $line-color
+  display: block
+  position: absolute
+  left: 43%
+  top: 43%
